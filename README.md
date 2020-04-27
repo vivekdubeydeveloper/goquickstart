@@ -6,3 +6,6 @@ Anyone who has little bit experience in any programming language can start from 
 Part 1:
 
 We will learn setup of go lang and setup of visual studio code.
+
+Part 2:
+Create First GO program without VS code.
