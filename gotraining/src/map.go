@@ -2,32 +2,43 @@ package main
 import "fmt"
 
 func main(){
-var mymap= map[string]int{
-	"a":10,
-	"b":20,
-	"c":30,
+
+//declaring map
+//var a map[string]int
+
+//initializing map
+//a["x"]=1
+//declaring and initializing map
+var b=map[string]int{
+	"a":1,
+	"b":2,
+	"c":3,
 }
 
-mymap1:= map[string]int{
-	"a":10,
-	"b":20,
-	"c":30,
+//declaring and initializing map using sorthand
+c:=map[string]int{
+	"a":1,
+	"b":2,
+	"c":3,
+}
+ 
+//using make function to declare the map and initialize 
+d:=make(map[string]int)
+d["a"]=1
+d["b"]=2
+d["c"]=3
+
+fmt.Println("b=",b)
+fmt.Println("c=",c)
+fmt.Println("d=",d)
+
+//range form of for loop
+for _,v:=range d{
+	fmt.Println("v=",v)
 }
 
-c:=make(map[int]string)
+//search key
+x,y:=d["abc"]
+fmt.Println("x=",x,"y",y)
 
-c[1]="a"
-c[2]="b"
-c[3]="c"
-
-/*mymap["a"]=10
-mymap["b"]=20
-mymap["c"]=30
-mymap["d"]=40*/
-
-fmt.Println(mymap)
-fmt.Println(mymap1)
-fmt.Println(c)
-y,z:=c[20]
-fmt.Println(y,"",z)
 }
